@@ -4,9 +4,12 @@
 
 use App\Model;
 use Faker\Generator as Faker;
+use App\Post;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Post::class, function (Faker $faker) {
     return [
-        //
+      'name' => $faker -> word,
+      'desc' => $faker -> sentence,
+      'date' => $faker -> dateTime
     ];
 });
