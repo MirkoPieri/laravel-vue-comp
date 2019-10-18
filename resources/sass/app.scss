@@ -6,3 +6,19 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.box {
+  padding: 50px;
+}
+
+header, footer{
+  padding: 30px;
+  text-align: center;
+  height: 100px;
+}
